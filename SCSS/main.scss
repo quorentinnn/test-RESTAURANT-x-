@@ -5,7 +5,7 @@ html{
     position:relative;
     min-height: 100%;
 }
-main{margin-bottom: 250px;
+main{margin-bottom: 270px;
 }
 footer.footer{
     padding: 15px;
@@ -23,6 +23,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content: "";
     position: absolute;
@@ -59,8 +60,9 @@ p{
     position: relative;
 
 &:hover{
-    .titre-image{
-        opacity: 1;
+    .titre-image,
+    .action-image-buttons{
+    opacity: 1;
      }
      img{ 
         filter: brightness(0.3);
@@ -81,7 +83,35 @@ p{
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: all 0.3s;
+     }
+     .action-image-buttons{
+        position : absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
 
-
+        opacity: 0;
+        transition: all 0.3s;
+     }
     }
+     
+
+.form-label{ 
+    color: $primary;
+}
+
+
+.allreservations{
+    a{
+        display: block;
+        color: $black;
+        padding: 10px;
+    }
+    
+
+   
+
 }
